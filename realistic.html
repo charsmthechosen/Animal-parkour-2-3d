@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Jungle Fox Run</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Fox Run">
+<meta name="theme-color" content="#0f2818">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; user-select: none; }
+  html, body { margin:0; padding:0; height:100%; overflow:hidden; background:#0f2818; font-family:-apple-system,system-ui,sans-serif; }
+  #canvas-wrap { position:fixed; inset:0; }
+  canvas { display:block; width:100%; height:100%; touch-action:none; }
+  #hud { position:fixed; top:calc(env(safe-area-inset-top,0px) + 12px); left:0; right:0; display:flex; justify-content:center; gap:24px; color:#fff; pointer-events:none; z-index:5; }
+  .hudCol { text-align:center; }
+  .hudScore { font-size:22px; font-weight:600; text-shadow:0 1px 4px rgba(0,0,0,0.6); }
+  .hudName { font-size:11px; opacity:0.75; text-transform:uppercase; letter-spacing:0.5px; }
+  .overlay { position:fixed; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; background:rgba(6,20,12,0.88); color:#fff; z-index:10; text-align:center; padding:24px; }
+  .overlay h1 { font-size:26px; font-weight:600; margin:0 0 6px; }
+  .overlay p { font-size:14px; opacity:0.8; margin:0 0 20px; max-width:320px; line-height:1.4; }
+  .overlay button { background:#1D9E75; border:none; color:#fff; padding:14px 28px; border-radius:12px; font-size:16px; font-weight:600; margin:6px 0; width:240px; }
+  .overlay button.secondary { background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.25); }
+  .overlay button:active { transform:scale(0.97); }
+  .overlay input { width:240px; padding:14px; border-radius:12px; border:1px solid rgba(255,255,255,0.25); background:rgba(255,255,255,0.08); color:#fff; font-size:16px; text-align:center; margin-bottom:8px; text-transform:uppercase; letter-spacing:2px; }
+  .overlay input::placeholder { color:rgba(255,255,255,0.4); text-transform:none; letter-spacing:normal; }
+  #roomCode { font-size:36px; letter-spacing:4px; font-weight:700; margin:8px 0; color:#5DCAA5; }
+  #lobbyStatus { font-size:13px; opacity:0.75; margin-bottom:18px; }
+  #controls { position:fixed; bottom:calc(env(safe-area-inset-bottom,0px) + 16px); left:0; right:0; display:flex; justify-content:center; gap:12px; z-index:5; }
+  #controls button { width:60px; height:60px; border-radius:50%; border:1px solid rgba(255,255,255,0.25); background:rgba(255,255,255,0.12); color:#fff; font-size:22px; backdrop-filter:blur(4px); }
+  #controls button:active { background:rgba(255,255,255,0.28); }
+  #hint { position:fixed; bottom:calc(env(safe-area-inset-bottom,0px) + 90px); left:0; right:0; text-align:center; color:rgba(255,255,255,0.5); font-size:12px; z-index:4; pointer-events:none; }
+  .small { font-size:12px !important; opacity:0.6; margin-top:2px !important; }
+</style>
+</head>
+<body>
+<div id="canvas-wrap"><canvas id="game"></canvas></div>
+
+<div id="hud" style="display:none">
+  <div class="hudCol"><div class="hudScore" id="scoreYou">0</div><div class="hudName">You</div></div>
+  <div id="hudRemotes" style="display:flex; gap:24px;"></div>
+</div>
+<p id="hint" style="display:none">Swipe left/right/up/down, or use the buttons</p>
+<div id="controls" style="display:none">
+  <button id="leftBtn">&larr;</button>
+  <button id="jumpBtn">&uarr;</button>
+  <button id="duckBtn">&darr;</button>
+  <button id="rightBtn">&rarr;</button>
+</div>
+
+<div id="menu" class="overlay">
+  <h1>Jungle Fox Run</h1>
+  <p>Dodge logs and rocks, duck under vines, collect coins. Race a friend live, or play solo — works offline after first load.</p>
+  <button id="soloBtn">Play solo</button>
+  <button id="hostBtn" class="secondary">Create room</button>
+  <input id="joinCode" placeholder="Enter room code">
+  <button id="joinBtn" class="secondary">Join room</button>
+  <p class="small" id="menuStatus"></p>
+</div>
+
+<div id="lobby" class="overlay" style="display:none">
+  <h1 id="lobbyTitle">Room code</h1>
+  <div id="roomCode">----</div>
+  <p id="lobbyStatus">Waiting for players…</p>
+  <button id="startRaceBtn" style="display:none">Start race</button>
+  <button id="cancelBtn" class="secondary">Cancel</button>
+</div>
+
+<div id="gameover" class="overlay" style="display:none">
+  <h1>Run over</h1>
+  <p id="goSummary"></p>
+  <button id="againBtn">Run again</button>
+  <button id="menuBtn" class="secondary">Main menu</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.2/dist/peerjs.min.js"></script>
+<script>
+/* ---------- offline caching via an inline service worker (keeps this a single file) ---------- */
+if ('serviceWorker' in navigator) {
+  try {
+    const swSource = `
+      const CACHE='fox-run-v2';
+      self.addEventListener('install', e => { self.skipWaiting(); });
+      self.addEventListener('activate', e => { self.clients.claim(); });
+      self.addEventListener('fetch', e => {
+        e.respondWith(
+          caches.open(CACHE).then(cache =>
+            cache.match(e.request).then(cached => {
+              const fetchPromise = fetch(e.request).then(resp => {
+                if (resp && resp.status === 200) cache.put(e.request, resp.clone());
+                return resp;
+              }).catch(() => cached);
+              return cached || fetchPromise;
+            })
+          )
+        );
+      });
+    `;
+    const blob = new Blob([swSource], { type: 'text/javascript' });
+    navigator.serviceWorker.register(URL.createObjectURL(blob));
+  } catch (e) {}
+}
+
+/* ---------- seeded RNG so every player's obstacle sequence matches exactly ---------- */
+function mulberry32(seed) {
+  return function () {
+    seed |= 0; seed = (seed + 0x6D2B79F5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+let rng = Math.random;
+
+/* ---------- procedural textures (no external image files needed) ---------- */
+function makeGrassTexture() {
+  const c = document.createElement('canvas'); c.width = c.height = 256;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#1a4d2e'; ctx.fillRect(0, 0, 256, 256);
+  for (let i = 0; i < 1400; i++) {
+    const g = 60 + Math.random() * 60;
+    ctx.fillStyle = `rgba(${20 + Math.random()*30},${g},${30+Math.random()*20},0.55)`;
+    const x = Math.random()*256, y = Math.random()*256, h = 4 + Math.random()*7;
+    ctx.fillRect(x, y, 1.5, h);
+  }
+  const tex = new THREE.CanvasTexture(c);
+  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
+  tex.repeat.set(4, 90);
+  tex.anisotropy = 4;
+  return tex;
+}
+function makePathTexture() {
+  const c = document.createElement('canvas'); c.width = c.height = 128;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#5a4a34'; ctx.fillRect(0, 0, 128, 128);
+  for (let i = 0; i < 400; i++) {
+    const v = 60 + Math.random()*40;
+    ctx.fillStyle = `rgba(${v+30},${v},${v-20},0.4)`;
+    ctx.beginPath();
+    ctx.arc(Math.random()*128, Math.random()*128, 1+Math.random()*2.5, 0, Math.PI*2);
+    ctx.fill();
+  }
+  const tex = new THREE.CanvasTexture(c);
+  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
+  tex.repeat.set(2, 60);
+  return tex;
+}
+function makeBarkTexture() {
+  const c = document.createElement('canvas'); c.width = 32; c.height = 64;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#3a1c0d'; ctx.fillRect(0,0,32,64);
+  for (let i=0;i<40;i++){
+    ctx.strokeStyle = `rgba(20,10,5,${0.3+Math.random()*0.3})`;
+    ctx.beginPath(); ctx.moveTo(Math.random()*32,0); ctx.lineTo(Math.random()*32,64); ctx.stroke();
+  }
+  const tex = new THREE.CanvasTexture(c);
+  tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
+  tex.repeat.set(2,2);
+  return tex;
+}
+function makeSkyTexture() {
+  const c = document.createElement('canvas'); c.width = 2; c.height = 256;
+  const ctx = c.getContext('2d');
+  const grad = ctx.createLinearGradient(0,0,0,256);
+  grad.addColorStop(0, '#8fc9e0');
+  grad.addColorStop(0.5, '#bfe4c8');
+  grad.addColorStop(1, '#e8f3d8');
+  ctx.fillStyle = grad; ctx.fillRect(0,0,2,256);
+  return new THREE.CanvasTexture(c);
+}
+
+/* ---------- constants ---------- */
+const LANE_X = [-2.4, 0, 2.4];
+const TRACK_GAP = 6.4;
+const COLORS = [0xD85A30, 0x378ADD, 0x7F77DD, 0xD4537E];
+const NAMES = ['You', 'P2', 'P3', 'P4'];
+
+/* ---------- renderer / scene ---------- */
+const canvas = document.getElementById('game');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.outputEncoding = THREE.sRGBEncoding;
+
+const scene = new THREE.Scene();
+scene.fog = new THREE.Fog(0xbfe4c8, 14, 46);
+
+const camera = new THREE.PerspectiveCamera(60, 1, 0.1, 120);
+
+const skyGeo = new THREE.SphereGeometry(90, 16, 16);
+const skyMat = new THREE.MeshBasicMaterial({ map: makeSkyTexture(), side: THREE.BackSide, fog:false });
+scene.add(new THREE.Mesh(skyGeo, skyMat));
+
+const hemi = new THREE.HemisphereLight(0xdfefe0, 0x2a4a30, 0.65);
+scene.add(hemi);
+const sun = new THREE.DirectionalLight(0xfff3d6, 1.15);
+sun.position.set(8, 16, 10);
+sun.castShadow = true;
+sun.shadow.mapSize.set(1024, 1024);
+sun.shadow.camera.left = -14; sun.shadow.camera.right = 14;
+sun.shadow.camera.top = 14; sun.shadow.camera.bottom = -14;
+sun.shadow.camera.near = 1; sun.shadow.camera.far = 40;
+sun.shadow.bias = -0.0025;
+scene.add(sun);
+const fill = new THREE.DirectionalLight(0xcfe8ff, 0.25);
+fill.position.set(-6, 8, -4);
+scene.add(fill);
+
+/* ---------- ground + path ---------- */
+const grassTex = makeGrassTexture();
+const pathTex = makePathTexture();
+const barkTex = makeBarkTexture();
+
+const ground = new THREE.Mesh(
+  new THREE.PlaneGeometry(60, 220),
+  new THREE.MeshStandardMaterial({ map: grassTex, roughness: 1, metalness: 0 })
+);
+ground.rotation.x = -Math.PI/2;
+ground.position.set(9, 0, -80);
+ground.receiveShadow = true;
+scene.add(ground);
+
+const pathSegs = [];
+function makePathSeg(offsetX) {
+  const m = new THREE.Mesh(
+    new THREE.PlaneGeometry(5.6, 220),
+    new THREE.MeshStandardMaterial({ map: pathTex, roughness: 0.95 })
+  );
+  m.rotation.x = -Math.PI/2;
+  m.position.set(offsetX, 0.005, -80);
+  m.receiveShadow = true;
+  scene.add(m);
+  pathSegs.push(m);
+}
+
+/* ---------- lane markers, trees ---------- */
+function makeLaneMarkers(offsetX) {
+  const list = [];
+  for (let i = 0; i < 24; i++) {
+    [-1.2, 1.2].forEach(x => {
+      const m = new THREE.Mesh(
+        new THREE.BoxGeometry(0.12, 0.02, 1.1),
+        new THREE.MeshStandardMaterial({ color: 0x5DCAA5, roughness: 0.6 })
+      );
+      m.position.set(offsetX + x, 0.011, -i*4);
+      m.receiveShadow = true;
+      scene.add(m);
+      list.push(m);
+    });
+  }
+  return list;
+}
+const barkMat = new THREE.MeshStandardMaterial({ map: barkTex, roughness: 0.9 });
+const leafMat = new THREE.MeshStandardMaterial({ color: 0x2b5c14, roughness: 0.85 });
+function makeTree(x, z) {
+  const g = new THREE.Group();
+  const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.26, 2.4, 7), barkMat);
+  trunk.position.y = 1.2; trunk.castShadow = true;
+  const leaves1 = new THREE.Mesh(new THREE.SphereGeometry(1.15, 8, 7), leafMat);
+  leaves1.position.y = 2.7; leaves1.castShadow = true;
+  const leaves2 = new THREE.Mesh(new THREE.SphereGeometry(0.8, 7, 6), leafMat);
+  leaves2.position.set(0.5, 3.3, 0.3); leaves2.castShadow = true;
+  g.add(trunk, leaves1, leaves2);
+  g.position.set(x, 0, z);
+  scene.add(g);
+  return g;
+}
+let trees = [];
+function buildEnvironment(numTracks) {
+  pathSegs.forEach(m => scene.remove(m));
+  pathSegs.length = 0;
+  trees.forEach(t => scene.remove(t));
+  trees = [];
+  laneMarkersByTrack.forEach(list => list.forEach(m => scene.remove(m)));
+  laneMarkersByTrack.length = 0;
+
+  for (let s = 0; s < numTracks; s++) {
+    const ox = s * TRACK_GAP;
+    makePathSeg(ox);
+    laneMarkersByTrack.push(makeLaneMarkers(ox));
+  }
+  const leftEdge = -4.4;
+  const rightEdge = (numTracks-1)*TRACK_GAP + 4.4;
+  for (let i = 0; i < 18; i++) {
+    trees.push(makeTree(leftEdge - 1 - Math.random()*2, -i*8));
+    trees.push(makeTree(rightEdge + 1 + Math.random()*2, -i*8 - 4));
+  }
+}
+let laneMarkersByTrack = [];
+
+/* ---------- fox factory ---------- */
+function createFox(colorHex) {
+  const group = new THREE.Group();
+  const bodyMat = new THREE.MeshStandardMaterial({ color: colorHex, roughness: 0.55, metalness: 0.05 });
+  const darkMat = new THREE.MeshStandardMaterial({ color: 0x2c1408, roughness: 0.7 });
+  const creamMat = new THREE.MeshStandardMaterial({ color: 0xF5C4B3, roughness: 0.6 });
+
+  const body = new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.6, 1.1), bodyMat);
+  body.position.y = 0.5; body.castShadow = true;
+  const head = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.45, 0.5), bodyMat);
+  head.position.set(0, 0.85, 0.65); head.castShadow = true;
+  const muzzle = new THREE.Mesh(new THREE.ConeGeometry(0.18, 0.4, 4), creamMat);
+  muzzle.rotation.x = Math.PI/2; muzzle.position.set(0, 0.78, 0.95); muzzle.castShadow = true;
+  const earGeo = new THREE.ConeGeometry(0.14, 0.32, 4);
+  const earL = new THREE.Mesh(earGeo, bodyMat); earL.position.set(-0.18, 1.18, 0.6); earL.castShadow = true;
+  const earR = new THREE.Mesh(earGeo, bodyMat); earR.position.set(0.18, 1.18, 0.6); earR.castShadow = true;
+  const tail = new THREE.Mesh(new THREE.ConeGeometry(0.22, 0.9, 6), bodyMat);
+  tail.rotation.x = Math.PI/2.2; tail.position.set(0, 0.65, -0.85); tail.castShadow = true;
+  const legGeo = new THREE.BoxGeometry(0.18, 0.4, 0.18);
+  const legs = [];
+  [[-0.22,-0.35],[0.22,-0.35],[-0.22,0.35],[0.22,0.35]].forEach(([x,z]) => {
+    const leg = new THREE.Mesh(legGeo, darkMat);
+    leg.position.set(x, 0.2, z); leg.castShadow = true;
+    group.add(leg); legs.push(leg);
+  });
+  group.add(body, head, muzzle, earL, earR, tail);
+  scene.add(group);
+  return { group, legs };
+}
+
+/* ---------- game state ---------- */
+let numTracks = 1;
+let mode = 'solo'; // solo | host | join
+let players = []; // {slot, offsetX, lane, targetX, jumpY, jumpV, jumping, ducking, duckT, score, alive, mesh, legs, isLocal}
+let obstacles = [];
+let coins = [];
+let speed = 0.32;
+let running = false;
+let spawnTimer = 0;
+let raceSeed = 0;
+let peer = null;
+let hostConn = null; // host only, single connection (2-player races)
+let joinConn = null; // joiner only
+let isHost = false;
+let netTimer = 0;
+
+function resetPlayers(n) {
+  players.forEach(p => { if (p.group) scene.remove(p.group); });
+  players = [];
+  for (let i = 0; i < n; i++) {
+    const { group, legs } = createFox(COLORS[i % COLORS.length]);
+    players.push({
+      slot: i, offsetX: i * TRACK_GAP, lane: 1, targetX: 0,
+      jumpY: 0, jumpV: 0, jumping: false, ducking: false, duckT: 0,
+      score: 0, alive: true, group, legs, isLocal: i === 0
+    });
+  }
+}
+
+function buildHud(n) {
+  const remotesEl = document.getElementById('hudRemotes');
+  remotesEl.innerHTML = '';
+  for (let i = 1; i < n; i++) {
+    const col = document.createElement('div');
+    col.className = 'hudCol';
+    col.innerHTML = '<div class="hudScore" id="score' + i + '">0</div><div class="hudName">' + NAMES[i] + '</div>';
+    remotesEl.appendChild(col);
+  }
+}
+
+function spawnRow() {
+  const r = rng();
+  const l = Math.floor(rng()*3);
+  const z = -46;
+  if (r < 0.32) {
+    spawnObstacleRow(l, z, 'log');
+  } else if (r < 0.58) {
+    spawnObstacleRow(l, z, 'rock');
+  } else if (r < 0.75) {
+    spawnObstacleRow(l, z, 'vine');
+  } else {
+    const meshesBySlot = [];
+    for (let i = 0; i < 4; i++) {
+      const row = [];
+      for (let s = 0; s < numTracks; s++) {
+        const mesh = new THREE.Mesh(
+          new THREE.SphereGeometry(0.2, 12, 10),
+          new THREE.MeshStandardMaterial({ color: 0xF0997B, roughness: 0.3, metalness: 0.4 })
+        );
+        mesh.position.set(LANE_X[l] + s*TRACK_GAP, 0.9, z - i*1.3);
+        mesh.castShadow = true;
+        scene.add(mesh);
+        row.push(mesh);
+      }
+      meshesBySlot.push(row);
+    }
+    coins.push({ lane: l, z: z, taken: new Array(numTracks).fill(false), rows: meshesBySlot });
+  }
+}
+function spawnObstacleRow(lane, z, type) {
+  const meshes = [];
+  for (let s = 0; s < numTracks; s++) {
+    let mesh;
+    if (type === 'log') {
+      mesh = new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.5, 0.6), new THREE.MeshStandardMaterial({ color: 0x5DCAA5, roughness: 0.8 }));
+      mesh.position.set(LANE_X[lane] + s*TRACK_GAP, 0.25, z);
+    } else if (type === 'rock') {
+      mesh = new THREE.Mesh(new THREE.DodecahedronGeometry(0.62, 0), new THREE.MeshStandardMaterial({ color: 0x8a897f, roughness: 0.95 }));
+      mesh.position.set(LANE_X[lane] + s*TRACK_GAP, 0.35, z);
+      mesh.rotation.set(rng()*Math.PI, rng()*Math.PI, 0);
+    } else {
+      mesh = new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.35, 0.35), new THREE.MeshStandardMaterial({ color: 0x4a7a1e, roughness: 0.8 }));
+      mesh.position.set(LANE_X[lane] + s*TRACK_GAP, 1.55, z);
+    }
+    mesh.castShadow = true;
+    scene.add(mesh);
+    meshes.push(mesh);
+  }
+  obstacles.push({ lane, type, z, meshes });
+}
+
+function clearField() {
+  obstacles.forEach(o => o.meshes.forEach(m => scene.remove(m)));
+  obstacles = [];
+  coins.forEach(c => c.rows.forEach(row => row.forEach(m => scene.remove(m))));
+  coins = [];
+}
+
+function startRun(seed, tracks) {
+  numTracks = tracks;
+  rng = mulberry32(seed >>> 0);
+  buildEnvironment(numTracks);
+  resetPlayers(numTracks);
+  buildHud(numTracks);
+  clearField();
+  speed = 0.32; spawnTimer = 0; netTimer = 0;
+  running = true;
+  document.getElementById('menu').style.display = 'none';
+  document.getElementById('lobby').style.display = 'none';
+  document.getElementById('gameover').style.display = 'none';
+  document.getElementById('hud').style.display = 'flex';
+  document.getElementById('hint').style.display = 'block';
+  document.getElementById('controls').style.display = 'flex';
+}
+
+function localGameOver() {
+  const me = players[0];
+  me.alive = false;
+  if (mode !== 'solo') sendState(true);
+  const others = players.slice(1);
+  if (mode === 'solo' || others.length === 0) {
+    endScreen('Score: ' + Math.floor(me.score));
+  } else {
+    let txt = 'You: ' + Math.floor(me.score);
+    others.forEach((p,i) => { txt += '  ·  ' + NAMES[i+1] + ': ' + Math.floor(p.score); });
+    endScreen(txt);
+  }
+}
+function endScreen(text) {
+  running = false;
+  document.getElementById('goSummary').textContent = text;
+  document.getElementById('gameover').style.display = 'flex';
+}
+
+/* ---------- update loop ---------- */
+function updateLocalPhysics(dt) {
+  const p = players[0];
+  if (!p.alive) return;
+  p.group.position.x = THREE.MathUtils.lerp(p.group.position.x, p.offsetX + p.targetX, 0.22);
+  if (p.jumping) {
+    p.jumpY += p.jumpV * dt * 60/60;
+    p.jumpV -= 0.045;
+    if (p.jumpY <= 0) { p.jumpY = 0; p.jumping = false; p.jumpV = 0; }
+  }
+  if (p.ducking) { p.duckT -= 1; if (p.duckT <= 0) p.ducking = false; }
+  p.group.position.y = p.jumpY;
+  const s = p.ducking ? 0.5 : 1;
+  p.group.scale.y = THREE.MathUtils.lerp(p.group.scale.y, s, 0.4);
+  p.legs.forEach((leg,i) => { leg.rotation.x = Math.sin(frameCount*0.35 + i)*0.5; });
+}
+function updateRemotePhysics() {
+  for (let i = 1; i < players.length; i++) {
+    const p = players[i];
+    if (!p.alive && p.group.visible === false) continue;
+    p.group.position.x = THREE.MathUtils.lerp(p.group.position.x, p.offsetX + p.targetX, 0.25);
+    p.group.position.y = THREE.MathUtils.lerp(p.group.position.y, p.jumpY, 0.35);
+    const s = p.ducking ? 0.5 : 1;
+    p.group.scale.y = THREE.MathUtils.lerp(p.group.scale.y, s, 0.35);
+    p.legs.forEach((leg,li) => { leg.rotation.x = Math.sin(frameCount*0.35 + li)*0.5; });
+    if (!p.alive) p.group.visible = frameCount % 20 < 12; // blink out when finished
+  }
+}
+
+let frameCount = 0;
+function update(dt) {
+  frameCount++;
+  const me = players[0];
+  if (me.alive) me.score += dt * 12;
+  document.getElementById('scoreYou').textContent = Math.floor(me.score);
+  for (let i = 1; i < players.length; i++) {
+    const el = document.getElementById('score' + i);
+    if (el) el.textContent = Math.floor(players[i].score);
+  }
+
+  if (me.alive) {
+    speed = Math.min(0.62, speed + 0.00006);
+    spawnTimer -= 1;
+    if (spawnTimer <= 0) { spawnRow(); spawnTimer = Math.max(28, 52 - speed*40); }
+  }
+
+  updateLocalPhysics(dt);
+  updateRemotePhysics();
+
+  const dz = speed * 60 * dt;
+  laneMarkersByTrack.forEach(list => list.forEach(m => { m.position.z += dz; if (m.position.z > 6) m.position.z -= 96; }));
+  trees.forEach(t => { t.position.z += dz; if (t.position.z > 6) t.position.z -= 144; });
+
+  obstacles.forEach(o => { o.z += dz; o.meshes.forEach(m => m.position.z = o.z); });
+  coins.forEach(c => { c.z += dz; c.rows.forEach(row => row.forEach(m => { m.position.z += dz; m.rotation.y += 0.15; })); });
+
+  obstacles = obstacles.filter(o => {
+    if (o.z > 2) { o.meshes.forEach(m => scene.remove(m)); return false; }
+    return true;
+  });
+  coins = coins.filter(c => {
+    if (c.z > 2) { c.rows.forEach(row => row.forEach(m => scene.remove(m))); return false; }
+    return true;
+  });
+
+  if (me.alive) {
+    for (const o of obstacles) {
+      if (o.lane !== me.lane) continue;
+      if (Math.abs(o.z - 1) < 0.55) {
+        if (o.type === 'vine' && !me.ducking) return localGameOver();
+        if ((o.type === 'log' || o.type === 'rock') && me.jumpY < 0.9) return localGameOver();
+      }
+    }
+    for (const c of coins) {
+      if (c.lane === me.lane && !c.taken[0] && Math.abs(c.z - 1) < 0.6) {
+        c.taken[0] = true; me.score += 20;
+        c.rows[0].forEach(m => { m.visible = false; });
+      }
+    }
+  }
+
+  const midX = ((numTracks-1) * TRACK_GAP) / 2;
+  const camTargetX = THREE.MathUtils.lerp(me.group.position.x, midX, numTracks > 1 ? 0.55 : 0);
+  const back = 8.5 + (numTracks-1) * 2.6;
+  const fov = 60 + (numTracks-1) * 6;
+  if (Math.abs(camera.fov - fov) > 0.1) { camera.fov = fov; camera.updateProjectionMatrix(); }
+  camera.position.x = THREE.MathUtils.lerp(camera.position.x, camTargetX, 0.06);
+  camera.position.y = 4.4;
+  camera.position.z = back;
+  camera.lookAt(camTargetX, 1.2, -6);
+
+  netTimer -= dt;
+  if (mode !== 'solo' && netTimer <= 0) { netTimer = 0.09; sendState(false); }
+}
+
+/* ---------- rendering loop ---------- */
+function resize() {
+  const w = window.innerWidth, h = window.innerHeight;
+  renderer.setSize(w, h, false);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+}
+window.addEventListener('resize', resize);
+resize();
+
+let last = performance.now();
+function loop(now) {
+  const dt = Math.min(0.033, (now - last) / 1000);
+  last = now;
+  if (running) update(dt);
+  renderer.render(scene, camera);
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+/* ---------- controls ---------- */
+function goLeft() { const p = players[0]; if (!p.alive) return; if (p.lane > 0) { p.lane--; p.targetX = LANE_X[p.lane]; } }
+function goRight() { const p = players[0]; if (!p.alive) return; if (p.lane < 2) { p.lane++; p.targetX = LANE_X[p.lane]; } }
+function doJump() { const p = players[0]; if (!p.alive) return; if (!p.jumping && !p.ducking) { p.jumping = true; p.jumpV = 0.62; } }
+function doDuck() { const p = players[0]; if (!p.alive) return; if (!p.jumping) { p.ducking = true; p.duckT = 32; } }
+
+document.getElementById('leftBtn').addEventListener('click', goLeft);
+document.getElementById('rightBtn').addEventListener('click', goRight);
+document.getElementById('jumpBtn').addEventListener('click', doJump);
+document.getElementById('duckBtn').addEventListener('click', doDuck);
+window.addEventListener('keydown', e => {
+  if (!running) return;
+  if (e.key === 'ArrowLeft') goLeft();
+  if (e.key === 'ArrowRight') goRight();
+  if (e.key === 'ArrowUp') doJump();
+  if (e.key === 'ArrowDown') doDuck();
+});
+let tsx = 0, tsy = 0;
+window.addEventListener('touchstart', e => { tsx = e.touches[0].clientX; tsy = e.touches[0].clientY; }, { passive: true });
+window.addEventListener('touchend', e => {
+  if (!running) return;
+  const dx = e.changedTouches[0].clientX - tsx;
+  const dy = e.changedTouches[0].clientY - tsy;
+  if (Math.abs(dx) > Math.abs(dy)) { if (dx > 30) goRight(); else if (dx < -30) goLeft(); }
+  else { if (dy < -30) doJump(); else if (dy > 30) doDuck(); }
+}, { passive: true });
+
+/* ---------- multiplayer (PeerJS, peer-to-peer, no account needed) ---------- */
+function randomRoomCode() {
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  let s = '';
+  for (let i = 0; i < 5; i++) s += chars[Math.floor(Math.random()*chars.length)];
+  return s;
+}
+
+function setupHost() {
+  mode = 'host'; isHost = true;
+  const code = randomRoomCode();
+  document.getElementById('menu').style.display = 'none';
+  document.getElementById('lobby').style.display = 'flex';
+  document.getElementById('lobbyTitle').textContent = 'Share this code';
+  document.getElementById('roomCode').textContent = code;
+  document.getElementById('lobbyStatus').textContent = 'Waiting for a player to join…';
+  document.getElementById('startRaceBtn').style.display = 'none';
+
+  peer = new Peer('foxrun-' + code, { debug: 0 });
+  peer.on('open', () => {});
+  peer.on('connection', conn => {
+    if (hostConn) { conn.close(); return; } // this build supports one opponent
+    hostConn = conn;
+    document.getElementById('lobbyStatus').textContent = 'Player joined — ready to start';
+    document.getElementById('startRaceBtn').style.display = 'inline-block';
+    conn.on('data', data => handleData(data));
+    conn.on('close', () => {
+      hostConn = null;
+      document.getElementById('lobbyStatus').textContent = 'Player disconnected';
+      document.getElementById('startRaceBtn').style.display = 'none';
+    });
+  });
+  peer.on('error', err => {
+    document.getElementById('lobbyStatus').textContent = 'Connection issue (' + err.type + '). Try again.';
+  });
+}
+
+function setupJoin(code) {
+  mode = 'join'; isHost = false;
+  document.getElementById('menu').style.display = 'none';
+  document.getElementById('lobby').style.display = 'flex';
+  document.getElementById('lobbyTitle').textContent = 'Joining…';
+  document.getElementById('roomCode').textContent = code.toUpperCase();
+  document.getElementById('lobbyStatus').textContent = 'Connecting…';
+  document.getElementById('startRaceBtn').style.display = 'none';
+
+  peer = new Peer({ debug: 0 });
+  peer.on('open', () => {
+    joinConn = peer.connect('foxrun-' + code.toUpperCase());
+    joinConn.on('open', () => {
+      document.getElementById('lobbyStatus').textContent = 'Connected — waiting for host to start';
+    });
+    joinConn.on('data', data => handleData(data));
+    joinConn.on('close', () => {
+      document.getElementById('lobbyStatus').textContent = 'Host disconnected.';
+    });
+  });
+  peer.on('error', err => {
+    document.getElementById('lobbyStatus').textContent = 'Could not connect (' + err.type + '). Check the code and try again.';
+  });
+}
+
+// Exactly 2 players per race. On every device, players[0] is always "me"
+// and players[1] is always "the opponent" — there is no ambiguity to
+// resolve, so no slot/id bookkeeping is needed.
+function handleData(data) {
+  if (data.type === 'start') {
+    const delay = Math.max(0, data.startAt - Date.now());
+    setTimeout(() => startRun(data.seed, 2), delay);
+  } else if (data.type === 'state') {
+    const p = players[1];
+    if (p) {
+      p.targetX = LANE_X[data.lane];
+      p.lane = data.lane;
+      p.jumpY = data.jumpY;
+      p.ducking = data.ducking;
+      p.score = data.score;
+      p.alive = data.alive;
+    }
+  }
+}
+
+function sendState() {
+  const p = players[0];
+  const payload = { type: 'state', lane: p.lane, jumpY: p.jumpY, ducking: p.ducking, score: p.score, alive: p.alive };
+  const conn = isHost ? hostConn : joinConn;
+  if (conn && conn.open) conn.send(payload);
+}
+
+document.getElementById('soloBtn').addEventListener('click', () => {
+  mode = 'solo';
+  startRun(Date.now() >>> 0, 1);
+});
+document.getElementById('hostBtn').addEventListener('click', setupHost);
+document.getElementById('joinBtn').addEventListener('click', () => {
+  const code = document.getElementById('joinCode').value.trim();
+  if (code.length < 3) { document.getElementById('menuStatus').textContent = 'Enter a valid room code'; return; }
+  setupJoin(code);
+});
+document.getElementById('startRaceBtn').addEventListener('click', () => {
+  if (!hostConn || !hostConn.open) return;
+  const seed = (Date.now() ^ Math.floor(Math.random()*1e9)) >>> 0;
+  const startAt = Date.now() + 2500;
+  hostConn.send({ type: 'start', seed, startAt });
+  setTimeout(() => startRun(seed, 2), Math.max(0, startAt - Date.now()));
+});
+document.getElementById('cancelBtn').addEventListener('click', () => {
+  if (peer) { peer.destroy(); peer = null; }
+  hostConn = null; joinConn = null;
+  document.getElementById('lobby').style.display = 'none';
+  document.getElementById('menu').style.display = 'flex';
+});
+document.getElementById('againBtn').addEventListener('click', () => {
+  if (mode === 'solo') { startRun(Date.now() >>> 0, 1); }
+  else {
+    document.getElementById('gameover').style.display = 'none';
+    document.getElementById('lobby').style.display = 'flex';
+    if (isHost) {
+      const connected = hostConn && hostConn.open;
+      document.getElementById('lobbyStatus').textContent = connected ? 'Player connected — ready to start' : 'Waiting for a player to join…';
+      document.getElementById('startRaceBtn').style.display = connected ? 'inline-block' : 'none';
+    } else {
+      document.getElementById('lobbyStatus').textContent = 'Waiting for host to start';
+    }
+  }
+});
+document.getElementById('menuBtn').addEventListener('click', () => {
+  if (peer) { peer.destroy(); peer = null; }
+  hostConn = null; joinConn = null; mode = 'solo';
+  document.getElementById('gameover').style.display = 'none';
+  document.getElementById('hud').style.display = 'none';
+  document.getElementById('hint').style.display = 'none';
+  document.getElementById('controls').style.display = 'none';
+  document.getElementById('menu').style.display = 'flex';
+});
+</script>
+</body>
+</html>
